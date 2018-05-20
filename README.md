@@ -38,6 +38,16 @@
 预览：              
 
 <img width="300" height="550" src="https://github.com/GramYang/EasyBilibili/blob/master/images/Screenshot_20180520-110237.jpg"/>
+<img width="300" height="550" src="https://github.com/GramYang/EasyBilibili/blob/master/images/Screenshot_20180520-110241.jpg"/>
+<img width="300" height="550" src="https://github.com/GramYang/EasyBilibili/blob/master/images/Screenshot_20180520-110301.jpg"/>
+<img width="300" height="550" src="https://github.com/GramYang/EasyBilibili/blob/master/images/Screenshot_20180520-110311.jpg"/>
+<img width="300" height="550" src="https://github.com/GramYang/EasyBilibili/blob/master/images/Screenshot_20180520-110316.jpg"/>
+<img width="300" height="550" src="https://github.com/GramYang/EasyBilibili/blob/master/images/Screenshot_20180520-110324.jpg"/>
+<img width="300" height="550" src="https://github.com/GramYang/EasyBilibili/blob/master/images/Screenshot_20180520-110328.jpg"/>
+<img width="300" height="550" src="https://github.com/GramYang/EasyBilibili/blob/master/images/Screenshot_20180520-110332.jpg"/>
+<img width="300" height="550" src="https://github.com/GramYang/EasyBilibili/blob/master/images/Screenshot_20180520-110336.jpg"/>
+<img width="300" height="550" src="https://github.com/GramYang/EasyBilibili/blob/master/images/Screenshot_20180520-110341.jpg"/>
+<img width="300" height="550" src="https://github.com/GramYang/EasyBilibili/blob/master/images/Screenshot_20180520-110348.jpg"/>
 
 
 
