@@ -1,0 +1,19 @@
+package com.developer.gram.easybilibili.mvp.contract;
+
+
+import com.developer.gram.easybilibili.base.BaseContract;
+import com.developer.gram.easybilibili.bean.region.RegionRecommendInfo;
+
+/**
+ * Created by Gram on 2017/12/22.
+ */
+
+public interface AdvertisingContract {
+    interface View extends BaseContract.BaseView {
+        void showAdvertising(RegionRecommendInfo.DataBean dataBean);
+    }
+
+    interface Presenter<T> extends BaseContract.BasePresenter<T> {
+        void getAdvertisingData();
+    }
+}

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="10dip">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.46" />
+
+    <com.developer.gram.easybilibili.widget.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:gravity="center"
+        android:padding="4dip"
+        android:textColor="@color/black_80"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/iv_avatar" />
+
+    <TextView
+        android:id="@+id/tv_title_time"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:gravity="center"
+        android:padding="4dip"
+        android:textColor="@color/font_gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_title_tag_time"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:gravity="center"
+        android:padding="4dip"
+        android:textColor="@color/font_gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_tag"
+       />
+    <TextView
+        android:id="@+id/tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:gravity="center"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+       />
+
+    <ImageView
+        android:id="@+id/iv_preview"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="34dip"
+        app:layout_constraintEnd_toStartOf="@id/guideline6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+      />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@color/black_alpha_60"
+        android:minWidth="32dip"
+        android:padding="2dip"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_preview"
+        app:layout_constraintEnd_toEndOf="@id/iv_preview"
+     />
+
+    <TextView
+        android:id="@+id/tv_video_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_marginLeft="4dip"
+        android:textColor="@color/black_80"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/iv_preview"
+        />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_video_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:layout_marginLeft="4dip"
+        android:paddingRight="3dip"
+        android:paddingTop="2dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/tv_video_title"
+        >
+
+        <ImageView
+            android:id="@+id/iv_video_play_num"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_upper_info_views"
+            android:tint="@color/gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_video_play_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="35dip"
+            android:text="xxxx"
+            android:textColor="@color/black_alpha_45"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_video_play_num"
+            app:layout_constraintTop_toTopOf="parent"
+           />
+
+
+        <ImageView
+            android:id="@+id/iv_video_online_region"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_upper_info_danmakus"
+            android:tint="@color/gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_video_play_num"
+            app:layout_constraintTop_toTopOf="parent"
+           />
+
+        <TextView
+            android:id="@+id/tv_video_favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="4dip"
+            android:text="xxxx"
+            android:textColor="@color/black_alpha_45"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_video_online_region"
+            app:layout_constraintTop_toTopOf="parent"
+           />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_video_tag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:layout_marginLeft="4dip"
+        android:paddingRight="3dip"
+        android:paddingTop="2dip"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_preview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline6"
+       >
+
+        <ImageView
+            android:id="@+id/iv_tag_video_play_num"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_upper_info_views"
+            android:tint="@color/gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+         />
+
+        <TextView
+            android:id="@+id/tv_tag_video_play_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="35dip"
+            android:text="xxxx"
+            android:textColor="@color/black_alpha_45"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_tag_video_play_num"
+            app:layout_constraintTop_toTopOf="parent"
+          />
+
+        <ImageView
+            android:id="@+id/iv_tag_video_online_region"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_upper_info_danmakus"
+            android:tint="@color/gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_tag_video_play_num"
+            app:layout_constraintTop_toTopOf="parent"
+           />
+
+        <TextView
+            android:id="@+id/tv_tag_video_favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="4dip"
+            android:text="xxxx"
+            android:textColor="@color/black_alpha_45"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_tag_video_online_region"
+           />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_view_menu"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:paddingBottom="2dip"
+        android:src="@drawable/ic_promo_index_more_v2"
+        app:layout_constraintBottom_toBottomOf="@+id/cl_video_tag"
+        app:layout_constraintEnd_toEndOf="@id/cl_video_tag"
+        app:layout_constraintTop_toTopOf="@+id/cl_video_tag"
+       />
+
+    <LinearLayout
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/iv_preview"
+       >
+
+        <RelativeLayout
+            android:id="@+id/fl_recent"
+            android:layout_width="match_parent"
+            android:layout_height="28dip"
+            android:layout_marginTop="10dip"
+            android:background="@color/gray_light"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toTopOf="@id/space"
+            app:layout_constraintTop_toBottomOf="@+id/iv_preview">
+
+            <TextView
+                android:id="@+id/tv_recent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="还有4个视频被隐藏"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/v_hor"/>
+
+        <View
+            android:id="@+id/v_hor"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_light"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

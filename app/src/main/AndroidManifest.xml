@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.developer.gram.easybilibili">
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!--bugly-->
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:name=".EasyBiliApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--入口界面-->
+        <activity
+            android:name=".function.common.SplashActivity"
+            android:theme="@style/ColorTranslucentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 主界面 -->
+        <activity
+            android:name=".function.common.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainActivityColorTranslucentTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+
+        <!-- 登录界面 -->
+        <activity
+            android:name=".function.common.LoginActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 浏览器界面 -->
+        <activity
+            android:name=".function.common.BrowserActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 视频详情界面 -->
+        <activity
+            android:name=".function.video.VideoDetailActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 用户详情界面 -->
+        <activity
+            android:name=".function.user.UserInfoDetailsActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 分区详情界面 -->
+        <activity
+            android:name=".function.home.region.RegionTypeDetailsActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 番剧时间表界面 -->
+        <activity
+            android:name=".function.home.bangumi.BangumiScheduleActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 游戏中心界面 -->
+        <activity
+            android:name=".function.entry.GameCentreActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 离线缓存界面 -->
+        <activity
+            android:name=".function.entry.OffLineDownloadActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 直播详情界面 -->
+        <activity
+            android:name=".function.home.live.LivePlayerActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 番剧索引界面 -->
+        <activity
+            android:name=".function.home.bangumi.BangumiIndexActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 全区排行榜界面 -->
+        <activity
+            android:name=".function.home.discover.AllAreasRankActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 原创排行榜界面 -->
+        <activity
+            android:name=".function.home.discover.OriginalRankActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 分季全部新番界面 -->
+        <activity
+            android:name=".function.home.bangumi.SeasonNewBangumiActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!--新番连载全部界面-->
+        <activity
+            android:name=".function.home.bangumi.NewBangumiSerialActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 番剧详情界面，这里的数据只有齐木楠雄的灾难-->
+        <activity
+            android:name=".function.home.bangumi.BangumiDetailsActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 话题中心界面 -->
+        <activity
+            android:name=".function.home.discover.TopicCenterActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 活动中心界面 -->
+        <activity
+            android:name=".function.home.discover.ActivityCenterActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 大会员界面 -->
+        <activity
+            android:name=".function.entry.VipActivity"
+            android:screenOrientation="portrait" />
+
+        <!--分区直播界面-->
+        <activity
+            android:name=".function.home.region.LiveAppIndexActivity"
+            android:screenOrientation="portrait" />
+
+        <!--分区广告界面-->
+        <activity
+            android:name=".function.home.region.AdvertisingActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 播放器界面 -->
+        <activity
+            android:name=".function.video.VideoPlayerActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/ColorTranslucentTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+    </application>
+</manifest>
