@@ -37,7 +37,7 @@
 
 预览：              
 
-
+<img width="300" height="550" src="https://github.com/GramYang/EasyBilibili/blob/master/images/Screenshot_20180520-110237.jpg"/>
 
 
 
